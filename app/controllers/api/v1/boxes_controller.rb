@@ -30,7 +30,7 @@ class Api::V1::BoxesController < ApplicationController
   private
 
   def box_params
-    params.permit(:length, :width, :height)
+    params.permit(:label, :length, :width, :height)
   end
 
   def find_box
